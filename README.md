@@ -4,10 +4,10 @@ Check my repositories
 
 I'm currently using Windows 10 arm64
 
-<a href="https://discord.gg/qd3c5WFmkU"><img src="https://github.com/JeromTWinL/JeromTWinL/raw/main/joindiscord.png" width="400" height="175"></a>
+<a href="https://discord.gg/qd3c5WFmkU"><img src="https://github.com/JeromTWinL/JeromTWinL/raw/main/joindiscord.png" width="400" height="200"></a>
 
 
-<a href="https://github.com/JeromTWinL"><img src="https://github.com/JeromTWinL/JeromTWinL/raw/main/followme.png" width="400" height="175"></a>
+<a href="https://github.com/JeromTWinL"><img src="https://github.com/JeromTWinL/JeromTWinL/raw/main/followme.png" width="400" height="200"></a>
 
 My Stats:
 
