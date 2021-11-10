@@ -1,0 +1,143 @@
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+<!-- Google web font "Open Sans" -->
+<link rel="stylesheet" href="/css/all.min.css" />
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/templatemo-style.css" />
+<link rel="stylesheet" href="/style.css" />
+<title>JeromTWinL</title>
+</head>
+<!--
+Sided Template
+https://templatemo.com/tm-527-sided
+-->
+<body>
+<style>
+body {
+  margin:0px;
+  font-family:"Open Sans",sans-serif;
+}
+.navigation {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:#ffffff;
+  padding:80px 0px;
+}
+.navigation a {
+  color:#000000;
+  text-decoration:none;
+  font-size:20px;
+  display:block;
+  margin:10px 0px;
+  padding:5px 50px;
+  transition:all 200ms linear;
+  max-width:150px;
+  text-align: right;
+}
+.navigation a:hover {
+  background:rgba(0,0,0,0);
+}
+
+.content {
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:2;
+  background:#fff;
+  padding:80px 20px 0px;
+  min-height:100vh;
+  transition:all 600ms ease-in-out;
+}
+.content .ham-btn {
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:50px;
+  height:50px;
+  background:#0b0d0d;
+  cursor:pointer;
+}
+.content .ham-btn span {
+  display:block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:70%;
+  height:5px;
+  background:#fff;
+  transition:all 200ms ease-in-out;
+}
+.content .ham-btn span:nth-child(1) {
+  top:25%;
+}
+.content .ham-btn span:nth-child(3) {
+  top:75%;
+}
+body.sideActive {
+  overflow:hidden;
+}
+body.sideActive .content .ham-btn span:nth-child(1) {
+  top:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+}
+body.sideActive .content .ham-btn span:nth-child(2) {
+  display:none; 
+}
+body.sideActive .content .ham-btn span:nth-child(3) {
+  top:50%;
+  transform:translate(-50%,-50%) rotate(-45deg);
+}
+body.sideActive .content {
+  top:80px;
+  left:250px;
+}
+</style>
+<!-- <script language="javascript" src="/js/docsify.js"></script> -->
+<div class="navigation">
+  <a href="#">Home</a>
+  <a href="aboutme">README (Profile)</a>
+  <b>Projects</b>
+  <p>Empty :(</p>
+  <a href="https://github.com/JeromTWinL/jeromtwinl.github.io/issues/new/choose">Add one to this web.</a>
+</div>
+<div class="content">
+  <div class="ham-btn" onclick="document.body.classList.toggle('sideActive')">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<div class="columns-bg">
+<!-- Logo & Intro -->
+<section id="logo" class="tm-section-logo">
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12 offset-sm-0 col-md-6 offset-md-6">
+<div class="tm-site-name-container">
+<div class="tm-site-name-container-inner">
+<h1 style="font-size:30px;" class="tm-text-primary tm-site-name">
+{{ page.title | default: site.title | default: site.github.repository_name }}
+</h1>
+<p class="tm-text-primary tm-site-description">
+{{ page.description | default: site.description | default: site.github.project_tagline }}
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+{{ content }}
+
+</section>
+</div>
+</body>
+</html>
